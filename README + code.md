@@ -2,6 +2,8 @@
 A tweeting camera app for Pi (great for events) created with Liz Smart, Sarah Sheerman-Chase, Greg Annandale and Emma Norton
 
 Here's the code:
+-----
+
 
 from twython import Twython
 from picamera import PiCamera
@@ -50,4 +52,3 @@ while True:
 
     with open('/home/pi/image.jpg', 'rb') as photo:
         twitter.update_status_with_media(status=message, media=photo)
-
